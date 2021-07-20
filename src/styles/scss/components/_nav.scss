@@ -1,0 +1,39 @@
+@use '../main/utils' as *;
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  
+
+  .nav__logo{
+    height: 80px;
+  }
+
+
+  .nav__ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;  
+    list-style: none;
+
+    li{
+      color: $amarillo;
+      background: transparent;
+      padding: 5px 20px;
+      border-radius: 25px;
+      transition: .75s;
+      font-weight: bold;
+
+      &:hover{
+        background: $amarillo;
+        color: $azul-osc-1;
+      }
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+nav .nav__logo {
+  height: 80px;
+}
+nav .nav__ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+nav .nav__ul li {
+  color: #ebb204ff;
+  background: transparent;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: 0.75s;
+  font-weight: bold;
+}
+nav .nav__ul li:hover {
+  background: #ebb204ff;
+  color: #250f80ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #250f80ff;
+}
+
+a {
+  text-decoration: none;
+  color: #ebb204ff;
+}
+
+h1, h2, h3, li {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+/*# sourceMappingURL=main.css.map */
