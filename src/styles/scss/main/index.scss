@@ -8,24 +8,47 @@
 @use 'utils' as *;
 
 
+//Generalidades
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: $azul-osc-1;
+}
+
+body{
+  background-color: $azul-osc-2;
 }
 
 a{
   text-decoration: none;
-  color: $amarillo;
 }
 
+//Font Styles
+h1,h2,h3{
+  @include titulos;
+}
 
-h1,h2,h3,li{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+h1,h2{
+  line-height: 1.3em;
+  margin-bottom: 20px;
+}
+
+p,li,a{
+  @include texto(azul);
 }
 
 p{
-  font-family: 'Merriweather', serif;
+  margin: 10px 0;
 }
 
+
+//Font Sizes
+//El h1 está en Media Quedys
+
+h2{
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+h3, li, p, a{
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+}

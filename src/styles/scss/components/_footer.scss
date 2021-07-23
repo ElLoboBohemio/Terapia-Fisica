@@ -1,0 +1,16 @@
+@use '../main/utils' as *;
+
+.footer{
+  background-color: $azul-osc-1;
+  
+}
+
+.footer__h3{
+  text-align: center;
+  color: $amarillo;
+
+  .footer__a{
+    color: $amarillo;
+    text-decoration: underline;
+  }
+}

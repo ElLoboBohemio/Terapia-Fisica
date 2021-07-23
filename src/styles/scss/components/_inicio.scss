@@ -1,0 +1,239 @@
+@use '../main/utils' as *;
+
+//Hero y sus animaciones
+.hero{
+  position: relative;
+
+  .hero__svg{
+    width: 100%;
+
+    #Liana-izq{
+      animation: LianaIzq ease-in-out;
+      animation-duration: 9s;
+
+      animation-iteration-count:infinite;
+      filter: blur(1px);
+      transform-origin: center;
+      transform-box: fill-box;
+
+      -webkit-animation-duration: 9s;
+
+      @keyframes LianaIzq {
+        0%   {transform: scaleX(1);}
+        50%  {transform: scaleX(0.7);}
+        100% {transform: scaleX(1);}
+      }
+    }
+
+    #Liana-centro{
+      animation: LianaCentro ease-in-out;
+      animation-duration: 10s;
+      animation-iteration-count:infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+
+      -webkit-animation-duration: 10s;
+
+      @keyframes LianaCentro{
+        0%   {transform: scaleX(1);}
+        50%  {transform: scaleX(0.8);}
+        100% {transform: scaleX(1);}
+      }
+    }
+
+    #Liana-der{
+      animation: LianaDer ease-in-out;
+      animation-iteration-count:infinite;
+      animation-duration: 8s;
+      filter: blur(2px);
+      transform-origin: center;
+      transform-box: fill-box;
+
+      -webkit-animation-duration: 8s;
+
+
+      @keyframes LianaDer {
+        0%   {transform: scaleX(1);}
+        50%  {transform: scaleX(0.6);}
+        100% {transform: scaleX(1);}
+      }
+    }
+
+
+  
+    #Balones{
+      filter: blur(2px);
+    }
+
+    //Izq
+    #balon-izq{
+      animation: BalonIzq 10s ease-in-out;
+      animation-iteration-count:infinite;
+      
+      @keyframes BalonIzq {
+        0% {transform: translateX(0);}
+        25% {transform: translateX(8px);}
+        50% {transform: translateX(0px);}
+        75% {}
+        100% {}
+      }
+    }
+
+    #Caminadora-2{
+      filter: blur(3px);
+    }
+
+    //No tanto blur
+    #Caminadora, #Pesas, #Liana-centro{
+      filter: blur(1px);
+    }
+
+    #Marco-huesos-blur, #Marco-der-blur, #Marco-izq-blur, #Hueso-der-blur, #Hueso-izq-blur{
+      animation: Difuminado 10s ease-in-out;
+      animation-iteration-count:infinite;
+    }
+
+    @keyframes Difuminado {
+      0% {filter: blur(8px);}
+      20% {filter: blur(2px);}
+      25% {filter: blur(8px);}
+      60% {filter: blur(2px);}
+      65% {filter: blur(8px);}
+      70% {filter: blur(2px);}
+      75% {filter: blur(8px);}
+      100% {filter: blur(8px);}
+    }
+  }
+
+  .hero__h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+//Adapataciones generales Mobile
+.info--mobile:nth-child(1), .info--mobile:nth-child(3){
+  display: grid;
+  grid-template-rows: auto; //Permite Cambiar distribucion
+}
+
+.info__img{
+  grid-row: 1/1;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info__svg{
+  width: 25%;
+}
+
+.info__desc{
+  grid-row: 2/2;
+  margin: 0 20px;
+}
+
+
+//Adaptaciones a margenes en 2 y 3 info
+.info--mobile{
+  margin: 50px 0;
+}
+
+
+//Especificaciones de CSS para .info
+.info__ul > li{
+  font-weight: normal;
+  color: $azul-clar;
+}
+
+.info__desc{
+  padding: 25px 40px;
+  background-color: $azul-osc-1;
+  border-radius: 25px 40px;
+}
+
+.info__img{
+  display: flex;
+  justify-content: center;
+}
+
+.info__a{
+  text-decoration: underline;
+  @include texto(amarillo);
+}
+
+//ANIMACIONES 
+//CIRCULOS
+.circulo{
+  animation: circulo 8s ease-in-out;
+  animation-iteration-count:infinite;
+  
+  @keyframes circulo {
+    0% {transform: scaleX(1) ;}
+    50% {transform: scale(0.90) translateX(5%) translateY(5%);}
+    100% {transform: scale(1);}
+  }
+}
+
+//PESA
+#Pesa{
+  animation: Pesa 8s ease-in-out;
+  animation-iteration-count:infinite;
+
+  @keyframes Pesa {
+    0% {transform: translateX(7px) translateY(-7px);}
+    50% {transform: translateX(-7px) translateY(7px);}
+    100% {transform: translateX(7px) translateY(-7px);}
+  }
+}
+
+//FRIO
+#Frio{
+  animation: Frio 8s ease-in-out;
+  animation-iteration-count:infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+
+  @keyframes Frio {
+    // 0% {transform: rotate(0deg);}
+    // 20% {transform: rotate(25deg);}
+    // 40% {transform: rotate(0deg);}
+    // 45% {transform: rotate(15deg);}
+    // 50% {transform: rotate(-15deg);}
+    // 55% {transform: rotate(15deg);}
+    // 60% {transform: rotate(-15deg);}
+    // 65% {transform: rotate(15deg);}
+    // 80% {transform: rotate(-25deg);}
+    // 100% {transform: rotate(0deg);}
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(45deg);}
+    75% {transform: rotate(-45deg);}
+    100% {transform: rotate(0deg);}
+  }
+}
+
+//PREGUNTA
+#Pregunta{
+  animation: Pregunta 8s ease-in-out;
+  animation-iteration-count:infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+
+  @keyframes Pregunta {
+    0% {}
+    25% {transform: scaleX(-1);}
+    50% {transform: scaleX(1);}
+    75% {transform: rotate(10deg);}
+    80% {transform: rotate(0deg);}
+    85% {transform: rotate(10deg);}
+    90% {transform: rotate(0deg);}
+    100% {}
+  }
+}

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 //Paginas
 import Inicio from './pages/Inicio';
 import Nav from './pages/Nav';
+import Footer from './pages/Footer';
 
 import Especialidades from './pages/Especialidades';
 import Error404 from './pages/Error404';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/perfil" component={Perfil} />
           <Route component={Error404} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

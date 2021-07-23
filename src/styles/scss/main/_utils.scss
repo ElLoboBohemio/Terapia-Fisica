@@ -1,6 +1,35 @@
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  align-items: center;
+}
+
+
+@mixin titulos {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: $amarillo;
+  font-weight: bold;
+}
+
+
+@mixin texto ($esp: true) {
+  font-family: 'Merriweather', serif;
+
+  @if $esp == azul {
+    color: $azul-clar;
+  } @else if $esp == amarillo {
+    color: $amarillo;
+  } @else {
+    @error "Seleccione texto mixin amarillo o azul."
+  }
+}
+
+
+
 $azul-osc-2: #000955ff;
 $azul-osc-1: #250f80ff;
 $azul: #0012a6ff;
+$azul-clar: #97a2ffff;
 
 $amarillo-osc-2: #a98203ff;
 $amarillo-osc-1: #c89803ff;
