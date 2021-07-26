@@ -1,56 +1,124 @@
 @use '../main/utils' as *;
 
-nav {
+//Encabezado
+.header {
+  background-color: $azul-osc-2;
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-  background-color: $azul-osc-2;
 
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-  .nav__logo{
-    height: 60px;
+  .header__logo{
+    height: 70px;
   }
 
-  .nav__ul{
-    display: none;
+  .header__toggle {
+  font-size: 1.75rem;
+  transition: .5s;
 
-    .nav__li{
-      @include titulos;
-      font-size: clamp(1rem, 2.5vw, 1.5rem);
+    svg:hover{
+      animation: rotar 0.5s;
+
+      @keyframes rotar {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(10deg); }
+        100% { transform: rotate(0deg); }
+      }
+    }
+  }
+}
+
+//Slidemenu
+.nav {
+  background-color: $azul-osc-2;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: .5s;
+  z-index: 123;
+}
+
+//Desplazamiento
+.nav.active {
+  right: 0;
+  z-index: 123;
+}
+
+//Lis
+.nav__li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  height: 60px;
+  margin: 20px 15px;
+  list-style: none;
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: $azul-clar;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+    transition: 1s;
+
+    &:hover{
+      background: $azul-osc-1;
+      padding-left: 25px;
+    }
+  }
+}
+
+.nav__ul {
+  width: 100%;
+}
+
+.nav__toggle {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+
+  a{
+    font-size: 2.5rem;
+
+    &:hover{
+      animation: temblar 3s;
+      animation-iteration-count: infinite; 
+
+      @keyframes temblar {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
     }
   }
 
-  .nav__toggle{
-    display: flex;
-    width: 25px;
-  }
+}
 
-  // .nav__ul{
-  //   display: flex;
-  //   justify-content: space-around;
-  //   width: 50%;  
-  //   list-style: none;
-
-  //   li{
-  //     color: $amarillo;
-  //     background: transparent;
-  //     padding: 5px 20px;
-  //     border-radius: 25px;
-  //     transition: .75s;
-  //     font-weight: bold;
-
-  //     &:hover{
-  //       background: $amarillo;
-  //       color: $azul-osc-1;
-  //     }
-  //   }
-  // }
-
-
+span {
+  margin-left: 16px;
 }
 
 

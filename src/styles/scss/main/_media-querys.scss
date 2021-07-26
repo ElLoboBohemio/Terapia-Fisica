@@ -4,57 +4,23 @@ h1{
   font-size: 1.3em;
 }
 
+
+@media (max-width: 768px) {
+  .nav{
+    width: 100vw;
+    right: -110%;
+    transition: 1s;
+  }
+}
+
+
+
+
 @media (min-width: 768px){
 
 h1{
   font-size: 2em;
 }
-
-//NAV LUEGO DE TABLETAS 768
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
-  background-color: $azul-osc-2;
-
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-  .nav__logo{
-    height: 80px;
-  }
-
-  .nav__toggle{
-    display: none;
-  }
-
-
-  .nav__ul{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;  
-    list-style: none;
-
-    li{
-      color: $amarillo;
-      background: transparent;
-      padding: 5px 20px;
-      border-radius: 25px;
-      transition: .75s;
-      font-weight: bold;
-
-      &:hover{
-        background: $amarillo;
-        color: $azul-osc-1;
-      }
-    }
-  }
-
-
-}
-
 
 //INICIO
 

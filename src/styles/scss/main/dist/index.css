@@ -1,14 +1,6 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  background-color: #250f80ff;
-}
-.footer .disclaimer__p {
-  font-size: 1rem;
-}
-
-.referencias, .disclaimer, .links {
-  padding: 10px 25px;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
 }
 
 .footer__h3 {
@@ -528,5 +520,3 @@ h3 {
 li, p, a {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
-
-/*# sourceMappingURL=main.css.map */

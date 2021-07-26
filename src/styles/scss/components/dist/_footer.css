@@ -1,0 +1,21 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  background-color: #250f80ff;
+}
+.footer .disclaimer__p {
+  font-size: 1rem;
+}
+
+.disclaimer, .links {
+  padding: 10px 25px;
+}
+
+.footer__h3 {
+  text-align: center;
+  color: #ebb204ff;
+}
+.footer__h3 .footer__a {
+  color: #ebb204ff;
+  text-decoration: underline;
+}

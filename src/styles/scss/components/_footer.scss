@@ -1,8 +1,19 @@
 @use '../main/utils' as *;
 
 .footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   background-color: $azul-osc-1;
-  
+
+
+  .disclaimer__p{
+    font-size: 1rem;
+  }
+}
+
+//Hijos del Footer
+.disclaimer, .links{
+  padding: 10px 25px;
 }
 
 .footer__h3{

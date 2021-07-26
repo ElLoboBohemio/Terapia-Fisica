@@ -62,8 +62,11 @@ function Inicio() {
         <article className="info info--mobile">
         <div className="info__desc">
             <h2>¿Por qué Terapia Física?</h2>
-            <p className="info__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequuntur optio quaerat culpa laudantium? Perspiciatis provident aut dolorum officiis a facere.</p>
+            <p className="info__p">La Terapia Física es una carrera que une el estudio de las ciencias de la salud con 
+            la ayuda a la comunidad para generar un cambio significativo en la calidad de vida de las personas. 
+            Para esta carrera es fundamental la investigación científica, habilidad motora, trabajo en equipo y sensibilidad social.
+            </p>
+            <a className="info__a" href="http://orientacion.ucr.ac.cr/wp-content/uploads/2018/07/TerapiaFisica.pdf" target="_blank" rel="noreferrer">(Universidad de Costa Rica, 2018)</a>
           </div>
 
           <div className="info__img">
