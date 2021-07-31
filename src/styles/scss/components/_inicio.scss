@@ -4,6 +4,9 @@
 .hero{
   position: relative;
 
+
+
+
   .hero__svg{
     width: 100%;
 
@@ -106,15 +109,7 @@
   }
 
   .hero__h1{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    @include h1(40%);
   }
 }
 
@@ -122,7 +117,7 @@
 //Adapataciones generales Mobile
 .info--mobile:nth-child(1), .info--mobile:nth-child(3){
   display: grid;
-  grid-template-rows: auto; //Permite Cambiar distribucion
+  grid-template-rows: auto; //Permite Cambiar distribución
 }
 
 .info__img{
@@ -164,13 +159,13 @@
   justify-content: center;
 }
 
-.info__a{
+.cita__a{
   text-decoration: underline;
   @include texto(amarillo);
 }
 
 //ANIMACIONES 
-//CIRCULOS
+//CÍRCULOS
 .circulo{
   animation: circulo 8s ease-in-out;
   animation-iteration-count:infinite;
@@ -198,8 +193,7 @@
 #Frio{
   animation: Frio 8s ease-in-out;
   animation-iteration-count:infinite;
-  transform-origin: center;
-  transform-box: fill-box;
+  @include animacionEje;
 
   @keyframes Frio {
     // 0% {transform: rotate(0deg);}
@@ -223,8 +217,7 @@
 #Pregunta{
   animation: Pregunta 8s ease-in-out;
   animation-iteration-count:infinite;
-  transform-origin: center;
-  transform-box: fill-box;
+  @include animacionEje;
 
   @keyframes Pregunta {
     0% {}

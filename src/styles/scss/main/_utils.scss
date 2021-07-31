@@ -1,7 +1,23 @@
-@mixin grid {
+$azul-osc-2: #000955ff;
+$azul-osc-1: #250f80ff;
+$azul: #0012a6ff;
+$azul-clar: #97a2ffff;
+
+$amarillo-osc-2: #a98203ff;
+$amarillo-osc-1: #c89803ff;
+$amarillo: #ebb204ff;
+
+
+@mixin grid($cols) {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax($cols, 1fr));
   align-items: center;
+  justify-content: center;
+}
+
+@mixin grid-mobile{
+  grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+  gap: 0;
 }
 
 
@@ -11,6 +27,22 @@
   font-weight: bold;
 }
 
+@mixin h1($top){
+  position: absolute;
+  top: $top;
+  left: 50%;
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin animacionEje {
+  transform-origin: center;
+  transform-box: fill-box;
+}
 
 @mixin texto ($esp: true) {
   font-family: 'Merriweather', serif;
@@ -23,13 +55,3 @@
     @error "Seleccione texto mixin amarillo o azul."
   }
 }
-
-
-$azul-osc-2: #000955ff;
-$azul-osc-1: #250f80ff;
-$azul: #0012a6ff;
-$azul-clar: #97a2ffff;
-
-$amarillo-osc-2: #a98203ff;
-$amarillo-osc-1: #c89803ff;
-$amarillo: #ebb204ff;

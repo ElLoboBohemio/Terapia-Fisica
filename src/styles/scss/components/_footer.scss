@@ -1,27 +1,46 @@
 @use '../main/utils' as *;
 
 .footer{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  @include grid(50%);
   background-color: $azul-osc-1;
+  
+  .links__div{
+    a:first-child{
+      margin-right: 10px;
+    }
+  }
 
-
-  .disclaimer__p{
+  p{
     font-size: 1rem;
   }
+
+  .links__a{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+}
+
+.footer > *{
+  text-align: start;
 }
 
 //Hijos del Footer
 .disclaimer, .links{
   padding: 10px 25px;
+  width: 100%;
 }
 
-.footer__h3{
+.footer__h4{
+  padding: 10px 0;
+  background-color: $azul-osc-1;
   text-align: center;
   color: $amarillo;
 
   .footer__a{
     color: $amarillo;
-    text-decoration: underline;
+    font-size: inherit;
+    font-style: italic;
+    font-weight: bold;
   }
 }

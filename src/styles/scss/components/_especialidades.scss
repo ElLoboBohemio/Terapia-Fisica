@@ -1,0 +1,196 @@
+@use '../main/utils' as *;
+
+//Animaciones de Hero Especialidades
+.esp__svg{
+  width: 100%;
+
+  //Fila 1
+  #Corazon, #Psicologia{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+  }
+
+  //Fila 2
+  #Diente, #Pulmones{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+
+  //Fila 3
+  #Lazo, #Deporte{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+  }
+
+
+  @keyframes arribaAbajo {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(30px)}
+    100% {transform: translateY(0px)}
+  }
+}
+
+.esp__h1{
+  @include h1(20%);
+}
+
+.area__h2{
+  text-align: center;
+}
+
+//Contenido de Especialidades
+.info--esp{
+  @include grid(calc(100% / 4));
+  margin: 0 5%;
+  column-gap: 8%;
+  
+  
+  //Div Contenedor de tarjeta
+  .esp__area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+
+    .area__svg{
+      width: 25%;
+    }
+
+    .area__div{
+      margin-top: 10px;
+      padding: 20px 15px;
+      background-color: $azul-osc-1;
+      border-radius: 15px;
+      width: 100%;
+    }
+  }
+}
+
+//Ver Más
+.mas--esp{
+  margin: 30px 0 100px 0;
+  text-align: center;
+
+  .mas__input{
+    background: $amarillo;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .25s;
+
+    &:hover{
+      background: $azul-clar;
+    }
+  }
+}
+
+
+//Animaciones de Iconos
+
+.psicologia__svg{
+  animation: Tambalear 5s ease-in-out;
+  animation-iteration-count:infinite;
+  @include animacionEje;
+}
+
+.corazon__svg{
+  animation: Latir 5s ease-in-out;
+  animation-iteration-count:infinite;
+}
+
+.pulmones__svg{
+  animation: Respirar 5s ease-in-out;
+  animation-iteration-count:infinite;
+}
+
+.diente__svg{
+  animation: Diente 5s ease-in-out;
+  animation-iteration-count:infinite;
+  @include animacionEje;
+}
+
+.lazo__svg{
+  animation: Lazo 5s ease-in-out;
+  animation-iteration-count:infinite;
+  @include animacionEje;
+}
+
+.balon__svg{
+  animation: Balon 5s ease-in-out;
+  animation-iteration-count:infinite;
+  @include animacionEje;
+}
+
+
+
+//Keyframes
+@keyframes Tambalear {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes Latir {
+  0% {transform: scale(1);}
+  25% {transform: scale(1.05) translateX(-2%) translateY(-2%);}
+  30% {transform: scale(1);}
+  35% {transform: scale(1.05) translateX(-2%) translateY(-2%);}
+  40% {transform: scale(1);}
+
+  60% {transform: scale(1.05) translateX(-2%) translateY(-2%);}
+  65% {transform: scale(1);}
+  70% {transform: scale(1.05) translateX(-2%) translateY(-2%);}
+  75% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+@keyframes Respirar {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05) translateX(-2%) translateY(-2%);}
+  100% {transform: scale(1);}
+}
+
+@keyframes Diente {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  35% {transform: rotate(0deg);}
+
+  75% {transform: rotate(5deg);}
+  85% {transform: rotate(0deg);}
+  100% {transform: scale(1);}
+}
+
+@keyframes Lazo {
+  0% {transform: skewY(5deg);}
+  50% {transform: skewY(-5deg);}
+  100% {transform: skewY(5deg);}
+}
+
+@keyframes Balon {
+  0% {transform: rotate(0deg);}
+
+  20% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  30% {transform: rotate(0deg);}
+  35% {transform: rotate(-5deg);}
+  40% {transform: rotate(0deg);}
+
+  60% {transform: rotate(0deg);}
+  65% {transform: rotate(5deg);}
+  70% {transform: rotate(-5deg);}
+  75% {transform: rotate(5deg);}
+  80% {transform: rotate(0deg);}
+
+  100% {transform: rotate(0deg);}
+}
+
+
+

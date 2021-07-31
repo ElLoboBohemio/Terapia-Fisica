@@ -4,12 +4,47 @@ h1{
   font-size: 1.3em;
 }
 
+//Desperfecto del footer haciéndose pequeño
+@media (max-width: 345px) {
+  .disclaimer, .links{
+    width: 100vw;
+  }
+}
 
+//Dispositivos Móviles
 @media (max-width: 768px) {
   .nav{
-    width: 100vw;
-    right: -110%;
     transition: 1s;
+  }
+
+  .imagen, .texto{
+    width: 100vw;
+  }
+
+  .texto{
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  //Hero H1 en Mobile
+  .esp__h1{
+    @include h1(18%);
+  }
+
+  //Grid Mobile
+  .error, .info--esp, .footer{
+    @include grid-mobile
+  }
+
+  //Especialidades Centrados
+  .area__div{
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  //Footer
+  .footer > *{
+    text-align: center;
   }
 }
 
@@ -26,7 +61,7 @@ h1{
 
 //Info regulares
 .info{
-  @include grid;
+  @include grid(50%);
   grid-template-rows:  repeat(3, auto);
 
   //Subgrid
@@ -97,7 +132,6 @@ h1{
   }
 
   .info__div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
+    @include grid(50%);
   }
 }

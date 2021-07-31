@@ -29,16 +29,20 @@
 }
 
 //Slidemenu
+
+
+
 .nav {
   background-color: $azul-osc-2;
-  width: 300px;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
-  right: -100%;
-  transition: .5s;
+  right: -110%;
+  transition: 1.25s;
   z-index: 123;
 }
 
@@ -51,7 +55,6 @@
 //Lis
 .nav__li {
   display: flex;
-  justify-content: start;
   align-items: center;
 
   height: 60px;
@@ -69,6 +72,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 5px;
 
     transition: 1s;

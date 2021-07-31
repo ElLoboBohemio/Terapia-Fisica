@@ -23,7 +23,7 @@ function Inicio() {
             <h2>¿Qué es Terapia Física?</h2>
             <p className="info__p">Es un servicio que busca desarrollar, mantener y restaurar al máximo la movilidad y capacidad 
             funcional de la vida del paciente.<br /> <br /> Se abarca el bienestar físico, psicológico, emocional y social</p>
-            <a className="info__a" href="https://world.physio/sites/default/files/2021-05/PS-2019-Description-of-PT-Spanish_0.pdf" target="_blank" rel="noreferrer">(World Physiotherapy, 2019)</a>
+            <a className="cita__a" href="https://world.physio/sites/default/files/2021-05/PS-2019-Description-of-PT-Spanish_0.pdf" target="_blank" rel="noreferrer">(World Physiotherapy, 2019)</a>
           </div>
 
           <div className="info__img">
@@ -38,8 +38,8 @@ function Inicio() {
 
           <div className="info__desc">
             <h2>¿Cómo se realiza la Terapia Física?</h2>
-            <p className="info__p">Desde la Terapia Física se promueve un estilo de vida saludable meduante el ejercicio.</p>
-            <a className="info__a" href="https://world.physio/es/what-we-do/advocacy/physical-activity" target="_blank" rel="noreferrer">(World Physiotherapy, s.f)</a> 
+            <p className="info__p">Desde la Terapia Física se promueve un estilo de vida saludable mediante el ejercicio.</p>
+            <a className="cita__a" href="https://world.physio/es/what-we-do/advocacy/physical-activity" target="_blank" rel="noreferrer">(World Physiotherapy, s.f)</a> 
             <p className="info__p--esp">Pero además se realizan intervenciones de rehabilitación utilizando los siguientes métodos físicos:</p>
             <div className="info__div">
               <ul className="info__ul">
@@ -55,7 +55,7 @@ function Inicio() {
                 <li>Radiación IR</li>
               </ul>
             </div>
-            <p className="info__p--esp">(Cameron, M., 2014, pp. 1-3) <a className="info__a" href="">(Ver Referencias)</a></p> 
+            <p className="info__p--esp">(Cameron, M., 2014, pp. 1-3) <a className="cita__a" href="">(Ver Referencias)</a></p> 
           </div>
         </article>
 
@@ -66,7 +66,7 @@ function Inicio() {
             la ayuda a la comunidad para generar un cambio significativo en la calidad de vida de las personas. 
             Para esta carrera es fundamental la investigación científica, habilidad motora, trabajo en equipo y sensibilidad social.
             </p>
-            <a className="info__a" href="http://orientacion.ucr.ac.cr/wp-content/uploads/2018/07/TerapiaFisica.pdf" target="_blank" rel="noreferrer">(Universidad de Costa Rica, 2018)</a>
+            <a className="cita__a" href="http://orientacion.ucr.ac.cr/wp-content/uploads/2018/07/TerapiaFisica.pdf" target="_blank" rel="noreferrer">(Universidad de Costa Rica, 2018)</a>
           </div>
 
           <div className="info__img">
