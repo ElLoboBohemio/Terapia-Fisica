@@ -7,13 +7,15 @@ $amarillo-osc-2: #a98203ff;
 $amarillo-osc-1: #c89803ff;
 $amarillo: #ebb204ff;
 
+$border-radius: 25px;
+
 
 @mixin grid($cols) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax($cols, 1fr));
-  align-items: center;
   justify-content: center;
 }
+
 
 @mixin grid-mobile{
   grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));

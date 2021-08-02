@@ -1,0 +1,100 @@
+@use '../main/utils' as *;
+
+.perfil-hero{
+  position: relative;
+
+  .perfil__h1{
+    @include h1(20%);
+  }
+
+  //SVGS Animaciones
+
+  //Fila 1
+  .perfil-psicologia__svg, .perfil-biologia__svg{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+  }
+  
+  //Fila 2
+  .perfil-quimica__svg, .perfil-fisica__svg{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+
+  //Fila 3
+  .perfil-ingles__svg, .perfil-fisiologia__svg{
+    animation: arribaAbajo 5s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+  }
+  
+}
+
+.perfil-info{
+  @include grid(calc(100% / 1.618));
+  grid-template-rows: repeat(2, 550px);
+  margin: 0 5% 100px 5%;
+  column-gap: 2.5%;
+
+  .perfil-laboral{
+    margin-top: 30px;
+  }
+
+  //Presentación general
+  .perfil-cursos, .perfil-laboral, .perfil-header{
+    background-color: $azul-osc-1;
+    padding: 30px 25px;
+    border-radius: $border-radius;
+  }
+
+  //Disposicion Columnas y Filas
+  .perfil-cursos, .perfil-laboral{
+    grid-column: 1/1;
+  }
+
+  .perfil-header{
+    grid-row: 1/3;
+    grid-column: 2/2;
+    height: 100%;
+  }
+
+  .perfil-cursos{
+    grid-row: 1/1;
+  }
+
+  .perfil-laboral{
+    grid-row: 1/1;
+  }
+
+  .perfil-laboral{
+    grid-row: 2/2;
+  }
+}
+
+//Subgrids de Uls
+.perfil-cursos__div, .perfil-laboral__div{
+  @include grid(47.5%);
+  column-gap: 2.5%;
+  margin: 30px 0;
+}
+
+.perfil__ul {
+  padding-left: 20px;
+}
+
+.perfil-citas__div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.perfil__span{
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.munyeco{
+  @include animacionEje;
+}

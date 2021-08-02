@@ -1,0 +1,142 @@
+h1 {
+  font-size: 1.3em;
+}
+
+@media (max-width: 345px) {
+  .disclaimer, .links {
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .error, .info--esp, .footer {
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+    gap: 0;
+  }
+
+  .nav {
+    transition: 1s;
+  }
+
+  .imagen, .texto {
+    width: 100vw;
+  }
+
+  .texto {
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  .perfil-info {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .perfil-info .perfil-header {
+    grid-row: 1/1;
+    grid-column: 1/2;
+    margin-bottom: 30px;
+  }
+  .perfil-info .perfil-header .perfil-header__div {
+    display: flex;
+    justify-content: center;
+  }
+  .perfil-info .perfil-header .perfil-header__div .munyeco {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .perfil-info .perfil-cursos {
+    grid-row: 2/2;
+    grid-column: 1/2;
+    margin: 30px 0;
+  }
+  .perfil-info .perfil-laboral {
+    grid-row: 3/3;
+    grid-column: 1/2;
+    margin-top: 30px;
+  }
+
+  .esp__h1 {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .area__div {
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .footer > * {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: center;
+    grid-template-rows: repeat(3, auto);
+  }
+  .info .info__div {
+    margin-top: 20px;
+  }
+
+  .info:nth-child(1) {
+    margin: 0 5% 10% 5%;
+  }
+  .info:nth-child(1) .info__img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  .info:nth-child(1) .info__desc {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  .info:nth-child(2) {
+    margin: 10% 5%;
+  }
+  .info:nth-child(2) .info__img {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .info:nth-child(2) .info__desc {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  .info:nth-child(3) {
+    margin: 10% 5%;
+  }
+  .info:nth-child(3) .info__img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  .info:nth-child(3) .info__desc {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  .info__svg {
+    width: 50%;
+  }
+}
+@media (min-width: 1450px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .info__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: center;
+  }
+}

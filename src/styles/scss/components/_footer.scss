@@ -8,6 +8,15 @@
     a:first-child{
       margin-right: 10px;
     }
+    
+    .links__svg{
+      color: $azul-clar;
+      transition: .5s;
+    }
+
+    .links__svg:hover{
+      color: $amarillo;
+    }
   }
 
   p{

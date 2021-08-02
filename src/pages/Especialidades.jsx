@@ -1,5 +1,7 @@
+//Hero
 import {ReactComponent as EspSVG} from '../svgs/especialidades.svg';
 
+//Svgs extras
 import {ReactComponent as Psicologia} from '../svgs/psicologia.svg';
 import {ReactComponent as Corazon} from '../svgs/corazon.svg';
 import {ReactComponent as Pulmones} from '../svgs/pulmones.svg';

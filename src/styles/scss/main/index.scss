@@ -1,9 +1,9 @@
-
-
-@use '../components/error404' as *;
-@use '../components/especialidades' as *;
-@use '../components/footer' as *;
 @use '../components/inicio' as *;
+@use '../components/perfil' as *;
+@use '../components/especialidades' as *;
+@use '../components/error404' as *;
+
+@use '../components/footer' as *;
 @use '../components/nav' as *;
 
 @use 'media-querys' as *;
@@ -41,7 +41,6 @@ p,li,a{
 p{
   margin: 10px 0;
 }
-
 
 //Font Sizes
 //El h1 está en Media Querys

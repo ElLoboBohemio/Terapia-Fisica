@@ -10,21 +10,15 @@ export const SidebarData = [
     cName: 'nav__li'
   },
   {
-    title: 'Especialidades',
-    path: '/especialidades',
-    icon: <FaIcons.FaCodeBranch />,
-    cName: 'nav__li'
-  },
-  {
-    title: 'Cursos',
-    path: '/cursos',
-    icon: <FaIcons.FaBookOpen />,
-    cName: 'nav__li'
-  },
-  {
     title: 'Perfil',
     path: '/perfil',
     icon: <FaIcons.FaAddressBook />,
+    cName: 'nav__li'
+  },
+  {
+    title: 'Especialidades',
+    path: '/especialidades',
+    icon: <FaIcons.FaCodeBranch />,
     cName: 'nav__li'
   }
 ];

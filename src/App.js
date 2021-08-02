@@ -8,7 +8,6 @@ import Footer from './pages/Footer';
 
 import Especialidades from './pages/Especialidades';
 import Error404 from './pages/Error404';
-import Cursos from './pages/Cursos';
 import Perfil from './pages/Perfil';
 
 //CSS
@@ -21,9 +20,8 @@ function App() {
         <Nav />
         <Switch> 
           <Route path="/" exact component={Inicio} />
-          <Route path="/especialidades" component={Especialidades} />
-          <Route path="/cursos" component={Cursos} />
           <Route path="/perfil" component={Perfil} />
+          <Route path="/especialidades" component={Especialidades} />
           <Route component={Error404} />
         </Switch>
         <Footer />

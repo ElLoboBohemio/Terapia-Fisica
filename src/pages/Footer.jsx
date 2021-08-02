@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <div className="disclaimer">
+        <div id="disclaimer" className="disclaimer">
           <h3>Disclaimer</h3>
           <p className="disclaimer__p">Este proyecto solo busca informar sobre la carrera de Terapia Física. 
             La información mostrada puede variar entre universidades o países.
@@ -15,9 +15,9 @@ function Footer() {
         <div className="links">
           <h3>Links</h3>
           <div className="links__div">
-            <IconContext.Provider value={{ color: '#97a2ffff', size: '1.5rem' }}>
-              <a href="https://twitter.com/BohemioLobo"><AiIcons.AiOutlineTwitter /></a>
-              <a href="https://github.com/ElLoboBohemio/Terapia-Fisica"><AiIcons.AiFillGithub /></a>
+            <IconContext.Provider value={{ size: '1.5rem' }}>
+              <a href="https://twitter.com/BohemioLobo"><AiIcons.AiOutlineTwitter className="links__svg" /></a>
+              <a href="https://github.com/ElLoboBohemio/Terapia-Fisica"><AiIcons.AiFillGithub className="links__svg" /></a>
             </IconContext.Provider>
           </div>
           <h3>Referencias</h3>
