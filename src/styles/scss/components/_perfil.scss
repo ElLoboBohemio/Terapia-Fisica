@@ -34,7 +34,7 @@
 }
 
 .perfil-info{
-  @include grid(calc(100% / 1.618));
+  @include grid(calc(100% / 1.618), $align: false);
   grid-template-rows: repeat(2, 550px);
   margin: 0 5% 100px 5%;
   column-gap: 2.5%;
@@ -76,7 +76,7 @@
 
 //Subgrids de Uls
 .perfil-cursos__div, .perfil-laboral__div{
-  @include grid(47.5%);
+  @include grid(47.5%, $align: false);
   column-gap: 2.5%;
   margin: 30px 0;
 }

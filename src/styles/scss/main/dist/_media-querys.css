@@ -83,6 +83,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     justify-content: center;
+    align-items: center;
     grid-template-rows: repeat(3, auto);
   }
   .info .info__div {
@@ -138,5 +139,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     justify-content: center;
+    align-items: center;
   }
 }

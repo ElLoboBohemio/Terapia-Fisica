@@ -44,7 +44,7 @@
 
 //Contenido de Especialidades
 .info--esp{
-  @include grid(calc(100% / 4));
+  @include grid(calc(100% / 4), $align: true);
   margin: 0 5%;
   column-gap: 8%;
   

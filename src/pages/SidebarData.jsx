@@ -20,5 +20,11 @@ export const SidebarData = [
     path: '/especialidades',
     icon: <FaIcons.FaCodeBranch />,
     cName: 'nav__li'
+  },
+  {
+    title: 'Referencias',
+    path: '/referencias',
+    icon: <AiIcons.AiFillFilePdf />,
+    cName: 'nav__li'
   }
 ];

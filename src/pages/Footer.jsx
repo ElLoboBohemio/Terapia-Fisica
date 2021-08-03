@@ -1,5 +1,7 @@
 import * as AiIcons from 'react-icons/ai';
 
+import { Link } from 'react-router-dom';
+
 import { IconContext } from 'react-icons'
 
 function Footer() {
@@ -21,7 +23,7 @@ function Footer() {
             </IconContext.Provider>
           </div>
           <h3>Referencias</h3>
-          <a className="links__a" href="">Ver referencias</a>
+          <Link className="links__a" to="/referencias">Ver referencias</Link>
         </div>
       </footer>
       <h4 className="footer__h4">Creado por <a className="footer__a" href="https://github.com/ElLoboBohemio/ElLoboBohemio" target="_blank" rel="noreferrer">Josué L.</a></h4>

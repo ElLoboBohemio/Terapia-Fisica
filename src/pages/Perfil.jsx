@@ -72,7 +72,7 @@ function Perfil() {
             <p>Información tomada de las siguientes Universidades Latinoamericanas:</p>
 
             <div className="perfil-citas__div">
-              <a className="cita__a" href="https://www.fmed.uba.ar/carreras/licenciatura-en-kinesiologia-y-fisiatria/plan-de-estudio" target="_blank" rel="noreferrer">(UBA, s.f)</a>
+              <a className="cita__a" href="https://www.uchile.cl/carreras/5012/kinesiologia" target="_blank" rel="noreferrer">(UC, 2014)</a>
               <a className="cita__a" href="http://orientacion.ucr.ac.cr/wp-content/uploads/2018/07/TerapiaFisica.pdf" target="_blank" rel="noreferrer">(UCR, 2018)</a>
               <a className="cita__a" href="https://www.dgire.unam.mx/contenido_wp/licenciatura-en-fisioterapia-ano-plan-2012/" target="_blank" rel="noreferrer">(UNAM, 2012)</a>
             </div>

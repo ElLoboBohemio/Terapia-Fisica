@@ -10,12 +10,15 @@ $amarillo: #ebb204ff;
 $border-radius: 25px;
 
 
-@mixin grid($cols) {
+@mixin grid($cols, $align: false) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax($cols, 1fr));
   justify-content: center;
-}
 
+  @if $align{
+    align-items: center;
+  }
+}
 
 @mixin grid-mobile{
   grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
@@ -46,7 +49,7 @@ $border-radius: 25px;
   transform-box: fill-box;
 }
 
-@mixin texto ($esp: true) {
+@mixin texto ($esp) {
   font-family: 'Merriweather', serif;
 
   @if $esp == azul {

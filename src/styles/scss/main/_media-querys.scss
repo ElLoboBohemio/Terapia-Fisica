@@ -102,7 +102,7 @@ h1{
 
 //Info regulares
 .info{
-  @include grid(50%);
+  @include grid(50%, $align: true);
   grid-template-rows:  repeat(3, auto);
 
   //Subgrid
@@ -173,6 +173,6 @@ h1{
   }
 
   .info__div{
-    @include grid(50%);
+    @include grid(50%, $align: true);
   }
 }

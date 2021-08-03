@@ -1,7 +1,7 @@
 @use '../main/utils' as *;
 
 .error{
-  @include grid(50%);
+  @include grid(50%, $align: true);
   height: 100vh;
 
   .imagen{

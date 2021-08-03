@@ -1,7 +1,7 @@
 @use '../main/utils' as *;
 
 .footer{
-  @include grid(50%);
+  @include grid(50%, $align: false);
   background-color: $azul-osc-1;
   
   .links__div{
