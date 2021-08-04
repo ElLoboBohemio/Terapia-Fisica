@@ -1,13 +1,10 @@
 @use '../main/utils' as *;
 
 //Hero y sus animaciones
-.hero{
+.inicio-hero{
   position: relative;
 
-
-
-
-  .hero__svg{
+  .inicio-hero__svg{
     width: 100%;
 
     #Liana-izq{
@@ -62,8 +59,6 @@
       }
     }
 
-
-  
     #Balones{
       filter: blur(2px);
     }
@@ -108,61 +103,57 @@
     }
   }
 
-  .hero__h1{
+  .inicio-hero__h1{
     @include h1(40%);
   }
 }
 
 
 //Adapataciones generales Mobile
-.info--mobile:nth-child(1), .info--mobile:nth-child(3){
+.inicio-info--mobile:nth-child(1), .inicio-info--mobile:nth-child(3){
   display: grid;
   grid-template-rows: auto; //Permite Cambiar distribución
 }
 
-.info__img{
+.inicio-info__img{
   grid-row: 1/1;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.info__svg{
+.inicio-info__svg{
   width: 25%;
 }
 
-.info__desc{
+.inicio-info__desc{
   grid-row: 2/2;
   margin: 0 20px;
 }
 
 
 //Adaptaciones a margenes en 2 y 3 info
-.info--mobile{
+.inicio-info--mobile{
   margin: 50px 0;
 }
 
 
 //Especificaciones de CSS para .info
-.info__ul > li{
+.inicio-info__ul > li{
   font-weight: normal;
   color: $azul-clar;
 }
 
-.info__desc{
+.inicio-info__desc{
   padding: 25px 40px;
   background-color: $azul-osc-1;
   border-radius: $border-radius;
 }
 
-.info__img{
+.inicio-info__img{
   display: flex;
   justify-content: center;
 }
 
-.cita__a{
-  text-decoration: underline;
-  @include texto(amarillo);
-}
 
 //ANIMACIONES 
 //CÍRCULOS

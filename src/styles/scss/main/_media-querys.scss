@@ -16,7 +16,7 @@ h1{
   //Generalidades
 
   //Grid Mobile
-  .error, .info--esp, .footer{
+  .error, .esp-info, .footer{
     @include grid-mobile
   }
 
@@ -73,12 +73,12 @@ h1{
   //Especialidades
 
     //Hero H1 en Mobile
-    .esp__h1{
+    .esp-hero__h1{
       @include h1(18%);
     }
 
     //Especialidades con texto centrado
-    .area__div{
+    .esp-area__div{
       text-align: center;
       margin: 0 10px;
     }
@@ -101,65 +101,64 @@ h1{
 //INICIO
 
 //Info regulares
-.info{
+.inicio-info{
   @include grid(50%, $align: true);
   grid-template-rows:  repeat(3, auto);
 
   //Subgrid
-  .info__div{
+  .inicio-info__div{
     margin-top: 20px;
   }
 }
 
 
-.info:nth-child(1) {
+.inicio-info:nth-child(1) {
   margin: 0 5% 10% 5%;
 
-  .info__img{
+  .inicio-info__img{
     grid-column: 2/2;
     grid-row: 1/2;
   }
 
-  .info__desc{
+  .inicio-info__desc{
     grid-column: 1/1;
     grid-row: 1/2;
   }
 }
 
 
-.info:nth-child(2){
+.inicio-info:nth-child(2){
   margin: 10% 5%;
 
-  .info__img{
+  .inicio-info__img{
     grid-column: 1/1;
     grid-row: 1/2;
 
   }
 
-  .info__desc{
+  .inicio-info__desc{
     grid-column: 2/2;
     grid-row: 1/2;
   }
 }
 
 
-.info:nth-child(3){
+.inicio-info:nth-child(3){
   margin: 10% 5%;
 
-  .info__img{
+  .inicio-info__img{
     grid-column: 2/2;
     grid-row: 1/2;
   }
 
-  .info__desc{
+  .inicio-info__desc{
     grid-column: 1/1;
     grid-row: 1/2;
   }
 }
-
 
 //SVG tamano
-.info__svg{
+.inicio-info__svg{
   width: 50%;
 }
 }

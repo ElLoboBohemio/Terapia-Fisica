@@ -1,7 +1,7 @@
 @use '../main/utils' as *;
 
 //Animaciones de Hero Especialidades
-.esp__svg{
+.esp-hero__svg{
   width: 100%;
 
   //Fila 1
@@ -34,33 +34,33 @@
   }
 }
 
-.esp__h1{
+.esp-hero__h1{
   @include h1(20%);
 }
 
-.area__h2{
+.esp-area__h2{
   text-align: center;
 }
 
 //Contenido de Especialidades
-.info--esp{
+.esp-info{
   @include grid(calc(100% / 4), $align: true);
   margin: 0 5%;
   column-gap: 8%;
   
   
   //Div Contenedor de tarjeta
-  .esp__area{
+  .esp-area{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px 0;
 
-    .area__svg{
+    .esp-area__svg{
       width: 25%;
     }
 
-    .area__div{
+    .esp-area__div{
       margin-top: 10px;
       padding: 20px 15px;
       background-color: $azul-osc-1;
@@ -71,7 +71,7 @@
 }
 
 //Ver Más
-.mas--esp{
+.esp-mas{
   margin: 30px 0 100px 0;
   text-align: center;
 

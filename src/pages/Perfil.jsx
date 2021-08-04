@@ -4,18 +4,22 @@ import {ReactComponent as PerfilSVG} from '../svgs/perfil.svg';
 //SVG
 import {ReactComponent as Munyeco} from '../svgs/munyeco.svg';
 
+//React AOS 
+import AOS from "aos";
+AOS.init({duration: 1000, easing: "ease-in-out"});
+
 function Perfil() {
   return (
     <>
       <section className="perfil">
-        <article className="perfil-hero">
+        <article className="perfil-hero" data-aos="fade-up" data-aos-duration="1250">
           <PerfilSVG className="perfil__svg" />
           <h1 className="perfil__h1">Perfil</h1>
         </article>
 
         <article className="perfil-info">
 
-          <div className="perfil-header">
+          <div className="perfil-header" data-aos="fade-left">
             <div className="perfil-header__div">
               <Munyeco className="munyeco" />
             </div>
@@ -42,7 +46,7 @@ function Perfil() {
 
           </div>
 
-          <div className="perfil-cursos">
+          <div className="perfil-cursos" data-aos="fade-right">
             <h2>Cursos</h2>
             <p>Generalmente se pueden encontrar los siguientes cursos en la carrera
               de Terapia Física.
@@ -79,7 +83,7 @@ function Perfil() {
             
           </div>
 
-          <div className="perfil-laboral">
+          <div className="perfil-laboral" data-aos="fade-right">
             <h2>Salida Laboral</h2>
             <p>Generalmente el Terapeuta Físico puede desarrollar su trabajo en las siguientes
               áreas:<a href="#disclaimer"><span className="perfil__span">*Ver Disclaimer</span></a></p>

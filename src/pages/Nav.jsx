@@ -9,9 +9,7 @@ import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import { SidebarData } from './SidebarData';
 
-
-function Nav() {
-
+function Nav() {  
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -20,15 +18,13 @@ function Nav() {
     <>
       <IconContext.Provider value={{ color: '#ebb204' }}>
         <header className='header'>
-          <Link>
+          <Link to="/">
             <ReactLogo to="/" className="header__logo"/>
           </Link>
           <Link to='#' className='header__toggle'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
         </header>
-
-
 
         <nav className={sidebar ? 'nav active' : 'nav'}>
           <ul className='nav__ul' onClick={showSidebar}>
