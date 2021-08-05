@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+  <g id="pregunta 1" clip-path="url(#clip0)">
+    <g id="Group">
+      <path class="circulo" fill="#250F80"
+        d="M49.874 99.748c27.545 0 49.874-22.33 49.874-49.874C99.748 22.329 77.418 0 49.874 0 22.329 0 0 22.33 0 49.874c0 27.545 22.33 49.874 49.874 49.874z" />
+      <g id="Pregunta">
+        <path id="Vector" stroke="#F2B924" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.437"
+          d="M30.826 35.06s-.508-16.442 19.062-16.442c18.503 0 19.036 16.442 19.036 16.442 0 16.184-10.114 14.652-19.049 16.978v18.509" />
+        <path id="Vector_2" fill="#F2B924" d="M49.874 81.131a2.646 2.646 0 100-5.292 2.646 2.646 0 000 5.292z" />
+      </g>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <path fill="#fff" d="M0 0h99.748v99.748H0z" />
+    </clipPath>
+  </defs>
+</svg>

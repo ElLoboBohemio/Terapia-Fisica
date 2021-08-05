@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.392 26.392">
+  <defs />
+  <path fill="#250f80"
+    d="M13.196 26.392c7.288 0 13.196-5.908 13.196-13.196C26.392 5.908 20.484 0 13.196 0 5.908 0 0 5.908 0 13.196c0 7.288 5.908 13.196 13.196 13.196z"
+    class="circulo" />
+  <g class="corazon__svg" fill="#f2b924">
+    <rect width="14.076" height="8.7" x="-5.694" y="15.656" ry="4.35" style="font-variation-settings:normal"
+      transform="rotate(-45)" />
+    <rect width="14.076" height="8.7" x="10.28" y="-3.006" ry="4.35" style="font-variation-settings:normal"
+      transform="rotate(45)" />
+  </g>
+</svg>
