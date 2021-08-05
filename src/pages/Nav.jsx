@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 import {ReactComponent as ReactLogo} from '../svgs/logo.svg';
 
 //SVG Library
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
+
+
+//SidebarData
 import { SidebarData } from './SidebarData';
 
 function Nav() {  
@@ -22,7 +25,7 @@ function Nav() {
             <ReactLogo to="/" className="header__logo"/>
           </Link>
           <Link to='#' className='header__toggle'>
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaBars onClick={showSidebar} />
           </Link>
         </header>
 
@@ -30,7 +33,7 @@ function Nav() {
           <ul className='nav__ul' onClick={showSidebar}>
             <li className='nav__toggle'>
               <Link to='#' className='menu-x'>
-                <AiIcons.AiOutlineClose />
+                <AiOutlineClose />
               </Link>
             </li>
             {SidebarData.map((item, index) => {
@@ -47,35 +50,6 @@ function Nav() {
         </nav>
       </IconContext.Provider>
     </>
-
-
-    
-    // <nav>
-    //   <Link to="/">
-    //   <ReactLogo className="nav__logo"/>
-    //   </Link>
-    //   <ul className="nav__ul">
-    //     <Link to="/">
-    //     <li className="nav__li">Inicio</li>
-    //     </Link>
-
-    //     <Link to="/especialidades">
-    //     <li className="nav__li">Especialidades</li>
-    //     </Link>
-
-    //     <Link to="/cursos">
-    //     <li className="nav__li">Cursos</li>
-    //     </Link>
-
-    //     <Link to="/perfil">
-    //     <li className="nav__li">Perfil</li>
-    //     </Link>
-    //   </ul>
-
-    //   <div className="nav__toggle" onClick={ handleClick }>
-    //     <i className={click ? <ReactEquis /> : <ReactMenu />}></i>
-    //   </div>
-    // </nav>
   );
 }
 

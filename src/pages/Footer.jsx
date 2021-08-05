@@ -1,8 +1,8 @@
-import * as AiIcons from 'react-icons/ai';
-
 import { Link } from 'react-router-dom';
 
+//SVGS Library
 import { IconContext } from 'react-icons'
+import { AiOutlineTwitter, AiFillGithub } from 'react-icons/ai';
 
 function Footer() {
   return (
@@ -18,8 +18,8 @@ function Footer() {
           <h3>Links</h3>
           <div className="links__div">
             <IconContext.Provider value={{ size: '1.5rem' }}>
-              <a href="https://twitter.com/BohemioLobo"><AiIcons.AiOutlineTwitter className="links__svg" /></a>
-              <a href="https://github.com/ElLoboBohemio/Terapia-Fisica"><AiIcons.AiFillGithub className="links__svg" /></a>
+              <a href="https://twitter.com/BohemioLobo"><AiOutlineTwitter className="links__svg" /></a>
+              <a href="https://github.com/ElLoboBohemio/Terapia-Fisica"><AiFillGithub className="links__svg" /></a>
             </IconContext.Provider>
           </div>
           <h3>Referencias</h3>

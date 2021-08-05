@@ -4,16 +4,16 @@
   @include grid(50%, $align: true);
   height: 100vh;
 
-  .imagen{
+  .errror-imagen{
     display: flex;
     justify-content: center;
     position: relative;
 
-    .imagen__pregunta{
+    .errror-imagen__pregunta{
       position: absolute;
     }
 
-    .imagen__pregunta, .imagen__radio{
+    .errror-imagen__pregunta, .errror-imagen__radio{
       width: 50%;
     }
   }

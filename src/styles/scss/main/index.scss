@@ -3,12 +3,17 @@
 @use '../components/especialidades' as *;
 @use '../components/error404' as *;
 @use '../components/referencias' as *;
+@use '../components/loader' as *;
 
 @use '../components/footer' as *;
 @use '../components/nav' as *;
 
 @use 'media-querys' as *;
 @use 'utils' as *;
+
+//GFONTS
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Merriweather&display=swap');
+
 
 //Generalidades
 *{
@@ -37,7 +42,7 @@ h1,h2{
 }
 
 p,li,a{
-  @include texto(azul);
+  @include errror-texto(azul);
 }
 
 p{
@@ -61,5 +66,5 @@ li, p, a, input{
 
 .cita__a{
   text-decoration: underline;
-  @include texto(amarillo);
+  @include errror-texto(amarillo);
 }

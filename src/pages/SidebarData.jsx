@@ -1,30 +1,31 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
+
+import { AiFillHome, AiFillFilePdf } from 'react-icons/ai';
+import { FaAddressBook, FaCodeBranch } from 'react-icons/fa';
 
 export const SidebarData = [
   {
     title: 'Inicio',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiFillHome />,
     cName: 'nav__li'
   },
   {
     title: 'Perfil',
     path: '/perfil',
-    icon: <FaIcons.FaAddressBook />,
+    icon: <FaAddressBook />,
     cName: 'nav__li'
   },
   {
     title: 'Especialidades',
     path: '/especialidades',
-    icon: <FaIcons.FaCodeBranch />,
+    icon: <FaCodeBranch />,
     cName: 'nav__li'
   },
   {
     title: 'Referencias',
     path: '/referencias',
-    icon: <AiIcons.AiFillFilePdf />,
+    icon: <AiFillFilePdf />,
     cName: 'nav__li'
   }
 ];

@@ -26,11 +26,11 @@ h1{
     transition: 1s;
   }
 
-  .imagen, .texto{
+  .errror-imagen, .errror-texto{
     width: 100vw;
   }
 
-  .texto{
+  .errror-texto{
     text-align: center;
     padding: 0 25px;
   }
@@ -77,7 +77,7 @@ h1{
       @include h1(13.5%);
     }
 
-    //Especialidades con texto centrado
+    //Especialidades con errror-texto centrado
     .esp-area__div{
       text-align: center;
       margin: 0 10px;

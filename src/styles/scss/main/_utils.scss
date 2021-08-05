@@ -9,7 +9,6 @@ $amarillo: #ebb204ff;
 
 $border-radius: 25px;
 
-
 @mixin grid($cols, $align: false) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax($cols, 1fr));
@@ -29,7 +28,6 @@ $border-radius: 25px;
 @mixin titulos {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: $amarillo;
-  font-weight: bold;
 }
 
 @mixin h1($top){
@@ -49,7 +47,7 @@ $border-radius: 25px;
   transform-box: fill-box;
 }
 
-@mixin texto ($esp) {
+@mixin errror-texto ($esp) {
   font-family: 'Merriweather', serif;
 
   @if $esp == azul {
@@ -57,6 +55,6 @@ $border-radius: 25px;
   } @else if $esp == amarillo {
     color: $amarillo;
   } @else {
-    @error "Seleccione texto mixin amarillo o azul."
+    @error "Seleccione errror-texto mixin amarillo o azul."
   }
 }
