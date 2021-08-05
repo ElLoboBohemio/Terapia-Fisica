@@ -6,7 +6,7 @@ import { FaAddressBook, FaCodeBranch } from 'react-icons/fa';
 export const SidebarData = [
   {
     title: 'Inicio',
-    path: '/',
+    path: '/Terapia-Fisica',
     icon: <AiFillHome />,
     cName: 'nav__li'
   },

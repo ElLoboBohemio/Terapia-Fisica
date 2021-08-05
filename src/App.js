@@ -25,7 +25,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Nav />
           <Switch> 
-            <Route path="/" exact component={Inicio} />
+            <Route path="/Terapia-Fisica" component={Inicio} />
             <Route path="/perfil" component={Perfil} />
             <Route path="/especialidades" component={Especialidades} />
             <Route path="/referencias" component={Referencias} />

@@ -20,7 +20,7 @@ $border-radius: 25px;
 }
 
 @mixin grid-mobile{
-  grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
   gap: 0;
 }
 
@@ -47,7 +47,7 @@ $border-radius: 25px;
   transform-box: fill-box;
 }
 
-@mixin errror-texto ($esp) {
+@mixin texto($esp) {
   font-family: 'Merriweather', serif;
 
   @if $esp == azul {
@@ -55,6 +55,6 @@ $border-radius: 25px;
   } @else if $esp == amarillo {
     color: $amarillo;
   } @else {
-    @error "Seleccione errror-texto mixin amarillo o azul."
+    @error "Seleccione error-texto mixin amarillo o azul."
   }
 }

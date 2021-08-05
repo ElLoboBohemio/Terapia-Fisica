@@ -8,9 +8,9 @@ import { IconContext } from 'react-icons';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
-
 //SidebarData
 import { SidebarData } from './SidebarData';
+
 
 function Nav() {  
   const [sidebar, setSidebar] = useState(false);
@@ -21,7 +21,7 @@ function Nav() {
     <>
       <IconContext.Provider value={{ color: '#ebb204' }}>
         <header className='header'>
-          <Link to="/">
+          <Link to="/Terapia-Fisica">
             <ReactLogo to="/" className="header__logo"/>
           </Link>
           <Link to='#' className='header__toggle'>

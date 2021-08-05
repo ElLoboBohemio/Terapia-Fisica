@@ -11,7 +11,6 @@ import {ReactComponent as Pregunta} from '../svgs/pregunta.svg';
 import AOS from "aos";
 AOS.init({duration: 1000, easing: "ease-in-out"});
 
-
 function Inicio() {
 
   return (

@@ -4,29 +4,34 @@
   @include grid(50%, $align: true);
   height: 100vh;
 
-  .errror-imagen{
+  .error-imagen{
     display: flex;
     justify-content: center;
     position: relative;
 
-    .errror-imagen__pregunta{
+    .error-imagen__pregunta{
       position: absolute;
     }
 
-    .errror-imagen__pregunta, .errror-imagen__radio{
+    .error-imagen__pregunta, .error-imagen__radio{
       width: 50%;
     }
   }
+
+  .error-texto{
+    padding: 40px;
+  }
+
 }
 
 
 
 //Blur de imágenes
 #pregunta--dif, #pregunta-marco--dif, #radio--dif, #radio-marco--dif{
-  filter: blur(3px);
+  filter: blur(1px);
 }  
 
-
+  
 //Animaciones
 //Radio
 #radio, #radio--dif{

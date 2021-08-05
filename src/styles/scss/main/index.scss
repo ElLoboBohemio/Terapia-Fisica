@@ -42,7 +42,7 @@ h1,h2{
 }
 
 p,li,a{
-  @include errror-texto(azul);
+  @include texto(azul);
 }
 
 p{
@@ -66,5 +66,28 @@ li, p, a, input{
 
 .cita__a{
   text-decoration: underline;
-  @include errror-texto(amarillo);
+  @include texto(amarillo);
+}
+
+//Scroll Bar
+
+/*SCROLL-BAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $azul-osc-2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $azul-osc-1;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
 }

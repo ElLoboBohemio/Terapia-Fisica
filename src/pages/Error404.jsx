@@ -5,12 +5,12 @@ function Error404() {
   return (
     <>
       <section className="error">
-        <article className="errror-imagen">
+        <article className="error-imagen">
           <Radio404 />
           <Pregunta404 />
         </article>
 
-        <article className="errror-texto">
+        <article className="error-texto">
           <h1>Error 404</h1>
           <p>Creo que no tenemos el "radio" que buscas.
             Está dirección URL no existe.</p>
